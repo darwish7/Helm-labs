@@ -51,3 +51,21 @@ helm history my-relase-v1
 helm rollback my-relase-v1 1  
 ```
 ![image info](./Images/9.png)
+
+# **HELM** Lab 2
+## Deploying [python app](https://github.com/atefhares/DevOps-Challenge-Demo-Code) using local **helm** chart that we build
+### we used the redis chart from bitnami and installed it using dependencies on the python app chart
+![image info](./Images/helm223.png)
+first we install dependencies on the local chart file
+```bash
+helm dependency build 
+```
+then we build our python app chart 
+```bash
+helm install python-app-realse-1 ./ziad-app
+```
+screenshot from curling the node at nodeport 30002
+![image info](./Images/helmlab2.png)
+screenshot from the browser
+![image info](./Images/helmlab22.png)
+

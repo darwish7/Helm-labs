@@ -23,7 +23,7 @@ spec:
         - name: REDIS_PORT
           value: "6379"
         - name: REDIS_HOST
-          value: python-app-realse-1-redis-master
+          value: python-app-realse-1-redis-master  ##this is the name of the cluster ip service created by the redis chart   
         - name: ENVIRONMENT
           value: DEV
         - name: PORT
