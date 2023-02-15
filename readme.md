@@ -56,6 +56,7 @@ helm rollback my-relase-v1 1
 ## Deploying [python app](https://github.com/atefhares/DevOps-Challenge-Demo-Code) using local **helm** chart that we build
 ### we used the redis chart from bitnami and installed it using dependencies on the python app chart
 ![image info](./Images/helm223.png)
+---
 first we install dependencies on the local chart file
 ```bash
 helm dependency build 
